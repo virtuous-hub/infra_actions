@@ -1,5 +1,4 @@
 from django.urls import path
-
 from infra_app import views
 
 app_name = 'infra_app'
