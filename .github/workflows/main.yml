@@ -37,8 +37,8 @@ jobs:
       - name: Login to Docker
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: virtuous431
+          password: 1337tanshik1337
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2
         with:
@@ -52,10 +52,45 @@ jobs:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }}
+        host: 158.160.63.145
+        username: virtuous-cloud
+        key: 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
+        passphrase: 1337tanshik1337
         script: |
           sudo docker pull virtuous431/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
